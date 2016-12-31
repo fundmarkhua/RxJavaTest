@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RxJavaTest</string>
+    <string name="phone_number">请输入手机号码</string>
+    <string name="get_state">获取归属地</string>
+</resources>
