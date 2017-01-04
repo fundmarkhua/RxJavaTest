@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.hua.rxjavatest.R;
+import com.hua.rxjavatest.mvp.presenter.MvpPresenter;
 import com.hua.rxjavatest.mvp.ui.impl.MvpUiImpl;
 
 import butterknife.BindView;
@@ -18,6 +19,8 @@ public class MvpActivity extends AppCompatActivity implements MvpUiImpl {
     @BindView(R.id.textView_state)
     TextView textViewState;
 
+    MvpPresenter mvpPresenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +30,7 @@ public class MvpActivity extends AppCompatActivity implements MvpUiImpl {
 
     @OnClick(R.id.button_one)
     public void ClickMethod() {
-         //调用presenter
+      mvpPresenter.testDos();
     }
 
     @Override
