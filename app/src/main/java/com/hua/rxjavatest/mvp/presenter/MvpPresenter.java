@@ -2,6 +2,7 @@ package com.hua.rxjavatest.mvp.presenter;
 
 import com.hua.rxjavatest.mvp.bean.MvpEntity;
 import com.hua.rxjavatest.mvp.model.MvpModel;
+import com.hua.rxjavatest.mvp.model.impl.MvpModelImpl;
 import com.hua.rxjavatest.mvp.ui.impl.MvpUiImpl;
 
 /**
@@ -10,8 +11,8 @@ import com.hua.rxjavatest.mvp.ui.impl.MvpUiImpl;
  */
 
 public class MvpPresenter {
-    MvpUiImpl ui;
-    MvpModel model;
+    private MvpUiImpl ui;
+    private MvpModelImpl model;
 
     public MvpPresenter(MvpUiImpl ui, MvpModel model) {
         this.ui = ui;
